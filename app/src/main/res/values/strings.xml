@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Binding With MVVM</string>
+    <string name="lbl_something_wrong">Oops!Something went wrong</string>
+    <string name="no_internet">No Internet</string>
+</resources>
