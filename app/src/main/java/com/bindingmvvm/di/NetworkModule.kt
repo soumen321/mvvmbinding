@@ -2,7 +2,7 @@ package com.bindingmvvm.di
 import com.bindingmvvm.data.remote.IContainerRemoteApi
 import com.bindingmvvm.data.repository.ContainerRepositoryImpl
 import com.bindingmvvm.domain.repository.IContainerRepository
-import com.bindingmvvm.domain.usecase.UseCaseContainer
+import com.bindingmvvm.domain.usecase.UseCaseGetList
 import com.bindingmvvm.utility.api_service.ServiceUrl.BASEURL
 import com.dogmvvm.utility.common.RetrofitContainer
 import dagger.Module
@@ -31,6 +31,6 @@ object NetworkModule {
     @Singleton
     @Provides
     fun providesGetContainerUseCase(
-        repo: IContainerRepository) = UseCaseContainer(repo)
+        repo: IContainerRepository) = UseCaseGetList(repo)
 
 }
