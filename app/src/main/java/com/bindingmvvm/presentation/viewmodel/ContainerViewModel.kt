@@ -28,6 +28,14 @@ class ContainerViewModel @Inject constructor(private val useCaseContainer: UseCa
         }
     }
 
+    fun callFunn() {
+        userLiveData.postValue(Resource.Loading())
+        viewModelScope.launch {
+
+            userLiveData.postValue(useCaseContainer())
+        }
+    }
+
 
 }
 
